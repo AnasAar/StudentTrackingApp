@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tracker" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:usesCleartextTraffic="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Tracker" >
+        <activity
+            android:name=".Profile"
+            android:exported="true"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/Theme.Tracker.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeMenu"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.Home" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuEnfant"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MenuEnfant" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Absences"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.Absences" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Devoirs"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.Devoirs" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Notes"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.Notes" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Professeurs_enfant"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.Professeurs_enfant" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Devoirs_general"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.Devoirs_general" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Mes_enfants_Activity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.Mes_enfants_Activity" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MessagerieMenu"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MessagerieMenu" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AjoutEtudiantClasse"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.AjoutEtudiantClasse" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AjoutClasseAdmin"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.AjoutClasseAdmin" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

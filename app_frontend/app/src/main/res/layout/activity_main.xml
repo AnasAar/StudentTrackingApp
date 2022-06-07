@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_back"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Tracker"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="209dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/white"
+        app:startIconTint="@color/white"
+        app:endIconTint="@color/white"
+        app:counterTextColor="@color/white"
+        android:textColorHint="@color/white"
+        android:id="@+id/textInputLayout"
+        app:helperText="Entrez l'E-mail reçu à l'administration "
+        app:helperTextTextColor="@color/white"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:endIconMode="clear_text"
+
+        app:startIconDrawable="@drawable/ic_mail_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:counterEnabled="true"
+        app:counterMaxLength="40"
+        android:hint="Adresse@example.com" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:textColor="@color/white"
+            android:id="@+id/TextInputemail"
+            android:inputType="textEmailAddress"
+            android:maxLength="40"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/white"
+        app:startIconTint="@color/white"
+        app:endIconTint="@color/white"
+        app:endIconMode="password_toggle"
+        app:counterTextColor="@color/white"
+        android:textColorHint="@color/white"
+        android:id="@+id/textInputLayoutPassword"
+        app:helperText="Entrez Votre Mot-de-passe"
+        app:helperTextTextColor="@color/white"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="32dp"
+
+
+
+        app:startIconDrawable="@drawable/ic_password_1"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:counterEnabled="true"
+        app:counterMaxLength="40"
+        android:hint="Password" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:textColor="@color/white"
+            android:id="@+id/TextInputPassword"
+            android:inputType="textPassword"
+            android:maxLength="40"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/connectbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+
+        android:text="Se Connecter"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayoutPassword"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayoutPassword"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPassword"
+        app:layout_constraintVertical_bias="0.24000001"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

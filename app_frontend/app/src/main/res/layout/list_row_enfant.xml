@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:padding="16dp"
+    >
+
+    <ImageView
+        android:id="@+id/imageDevoir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_man_people_svgrepo_com" />
+
+    <TextView
+        android:id="@+id/NomsFils"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/imageDevoir"
+        android:text="Name"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/access_child_link"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NomsFils"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/imageDevoir"
+        android:text="Accéder à l'enfant"
+        android:textColor="@color/white"
+
+        />
+
+</RelativeLayout>
